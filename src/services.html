@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    @include('partials/sprite.html')
+    @include('partials/header.html')
+    <section class="breadcrumbs container">
+      <a class="breadcrumbs__item breadcrumbs__link" href="/">Главная</a>
+      <span class="breadcrumbs__item" >Услуги</span>
+    </section>
+    
+    <main class="services container">
+      <h1 class="services__title title_1">Услуги</h1>
+      <ul class="services__list">
+        <li class="services__item">
+          <a class="services__link" href="#" style="background: linear-gradient(0deg, rgba(17, 95, 167, 0.5), rgba(17, 95, 167, 0.5)), url('./img/services/1.jpg') no-repeat center / cover;"><span>Обслуживание банкоматов</span></a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#" style="background: linear-gradient(0deg, rgba(17, 95, 167, 0.5), rgba(17, 95, 167, 0.5)), url('./img/services/2.jpg') no-repeat center / cover;"><span>Гарантийный и постгарантийный ремонт POS-терминалов VeriFone и PAX</span></a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#" style="background: linear-gradient(0deg, rgba(17, 95, 167, 0.5), rgba(17, 95, 167, 0.5)), url('./img/services/3.jpg') no-repeat center / cover;"><span>Сопровождение POS терминального оборудования</span></a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#" style="background: linear-gradient(0deg, rgba(17, 95, 167, 0.5), rgba(17, 95, 167, 0.5)), url('./img/services/4.jpg') no-repeat center / cover;"><span>Ремонт и обслуживание кассового оборудования</span></a>
+        </li>
+      </ul>
+    </main>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

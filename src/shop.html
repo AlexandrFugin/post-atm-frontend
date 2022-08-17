@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    @include('partials/sprite.html')
+    @include('partials/header.html')
+    <section class="breadcrumbs container">
+      <a class="breadcrumbs__item breadcrumbs__link" href="/">Главная</a>
+      <span class="breadcrumbs__item" >Интернет-магазин</span>
+    </section>
+    
+    <section class="shop">
+      <div class="shop__heading container">
+        <h1 class="shop__title title_1">Интернет магазин</h1>
+        <nav class="shop__navigation">
+          <ul class="shop__navigation-list">
+            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#details">Запчасти для банкоматов</a></li>
+            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#details">POS-терминалы</a></li>
+            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#details">Расходные материалы (чековая лента)</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="shop__category">
+        <div class="container">
+          <div class="shop__category-heading">
+            <h2 class="shop__category-title">Запчасти для банкоматов</h2>
+            <button class="shop__filters-button">Фильтры<span class="shop__filters-button-number">1</span></button>
+          </div>
+          <div class="shop__filters">
+            <div class="shop__filters-item">
+              <select>
+                <option value="verifone">VeriFone</option>
+                <option value="pass">Pass</option>
+              </select>
+            </div>
+          </div>
+          <div class="shop__category-row">
+            <div class="shop__sorting">
+              <label class="shop__sorting-item"><input class="shop__sorting-radio" type="radio" name="Сортировка" value="Сначала дешевле" checked><span class="shop__sorting-text">Сначала дешевле</span></label>
+              <label class="shop__sorting-item"><input class="shop__sorting-radio" type="radio" name="Сортировка" value="Сначала дороже" checked><span class="shop__sorting-text">Сначала дороже</span></label>
+            </div>
+            <button class="shop__reset">Сбросить фильтры</button>
+          </div>
+          <ul class="shop__category-list">
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="shop__category">
+        <div class="container">
+          <div class="shop__category-heading">
+            <h2 class="shop__category-title">Pos-терминалы</h2>
+            <button class="shop__filters-button">Фильтры<span class="shop__filters-button-number">2</span></button>
+          </div>
+          <div class="shop__filters">
+            <div class="shop__filters-item">
+              <select>
+                <option value="verifone">VeriFone</option>
+                <option value="pass">Pass</option>
+              </select>
+            </div>
+            <div class="shop__filters-item">
+              <select>
+                <option value="1">Выбрать тип</option>
+                <option value="2">Выбрать тип 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="shop__category-row">
+            <div class="shop__sorting">
+              <label class="shop__sorting-item"><input class="shop__sorting-radio" type="radio" name="Сортировка" value="Сначала дешевле" checked><span class="shop__sorting-text">Сначала дешевле</span></label>
+              <label class="shop__sorting-item"><input class="shop__sorting-radio" type="radio" name="Сортировка" value="Сначала дороже" checked><span class="shop__sorting-text">Сначала дороже</span></label>
+            </div>
+            <button class="shop__reset">Сбросить фильтры</button>
+          </div>
+          <ul class="shop__category-list">
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="shop__category">
+        <div class="container">
+          <div class="shop__category-heading">
+            <h2 class="shop__category-title">Расходные материалы</h2>
+            <button class="shop__filters-button">Фильтры<span class="shop__filters-button-number">3</span></button>
+          </div>
+          <div class="shop__filters">
+            <div class="shop__filters-item">
+              <select>
+                <option value="verifone">VeriFone</option>
+                <option value="pass">Pass</option>
+              </select>
+            </div>
+            <div class="shop__filters-item">
+              <select>
+                <option value="1">Выбрать тип</option>
+                <option value="2">Выбрать тип 2</option>
+              </select>
+            </div>
+            <div class="shop__filters-item">
+              <select>
+                <option value="1">Выбрать толщину намотки</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="shop__category-row">
+            <div class="shop__sorting">
+              <label class="shop__sorting-item"><input class="shop__sorting-radio" type="radio" name="Сортировка" value="Сначала дешевле" checked><span class="shop__sorting-text">Сначала дешевле</span></label>
+              <label class="shop__sorting-item"><input class="shop__sorting-radio" type="radio" name="Сортировка" value="Сначала дороже" checked><span class="shop__sorting-text">Сначала дороже</span></label>
+            </div>
+            <button class="shop__reset">Сбросить фильтры</button>
+          </div>
+          <ul class="shop__category-list">
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+            <li class="shop__product">
+              <img class="shop__product-image" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+              <div class="shop__product-info">
+                <h3 class="shop__product-title">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+                <div class="shop__product-price">
+                  <span>18 000 ₽</span>
+                  <span class="shop__product-old">23 000 ₽</span>
+                </div>
+                <div class="shop__product-row">
+                  <div class="shop__quantity">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 2rem;">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                    <button class="shop__quantity-button">
+                      <svg style="width: 13rem; height: 13rem;">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="shop__cart">В корзину</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

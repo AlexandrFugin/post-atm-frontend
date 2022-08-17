@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    @include('partials/sprite.html')
+    @include('partials/header.html')
+    <section class="breadcrumbs container">
+      <a class="breadcrumbs__item breadcrumbs__link" href="/">Главная</a>
+      <span class="breadcrumbs__item">Корзина</span>
+    </section>
+    
+    <section class="cart container">
+      <h1 class="cart__title title_1">Корзина</h1>
+      <ul class="cart__list">
+        <li class="cart__item">
+          <div class="cart__image-wrapper">
+            <img class="cart__image" src="./img/product.jpg" alt="">
+          </div>
+          <div class="cart__info">
+            <h2 class="cart__name">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h2>
+            <div class="cart__row">
+              <div class="cart__quantity">
+                <button class="cart__quantity-button">
+                  <svg style="width: 13rem; height: 2rem;">
+                    <use xlink:href="#minus"></use>
+                  </svg>
+                </button>
+                <input class="cart__quantity-number" type="number" name="Количество" value="1">
+                <button class="cart__quantity-button">
+                  <svg style="width: 13rem; height: 13rem;">
+                    <use xlink:href="#plus"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="cart__price">
+                <span>18 000 ₽</span>
+                <span class="cart__price-old">23 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <button class="cart__close">
+            <div class="cart__close-inner">
+              <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                <use xlink:href="#plus"></use>
+              </svg>
+            </div>
+          </button>
+        </li>
+        <li class="cart__item">
+          <div class="cart__image-wrapper">
+            <img class="cart__image" src="./img/product.jpg" alt="">
+          </div>
+          <div class="cart__info">
+            <h2 class="cart__name">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h2>
+            <div class="cart__row">
+              <div class="cart__quantity">
+                <button class="cart__quantity-button">
+                  <svg style="width: 13rem; height: 2rem;">
+                    <use xlink:href="#minus"></use>
+                  </svg>
+                </button>
+                <input class="cart__quantity-number" type="number" name="Количество" value="1">
+                <button class="cart__quantity-button">
+                  <svg style="width: 13rem; height: 13rem;">
+                    <use xlink:href="#plus"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="cart__price">
+                <span>18 000 ₽</span>
+                <span class="cart__price-old">23 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <button class="cart__close">
+            <div class="cart__close-inner">
+              <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                <use xlink:href="#plus"></use>
+              </svg>
+            </div>
+          </button>
+        </li>
+        <li class="cart__item">
+          <div class="cart__image-wrapper">
+            <img class="cart__image" src="./img/product.jpg" alt="">
+          </div>
+          <div class="cart__info">
+            <h2 class="cart__name">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h2>
+            <div class="cart__row">
+              <div class="cart__quantity">
+                <button class="cart__quantity-button">
+                  <svg style="width: 13rem; height: 2rem;">
+                    <use xlink:href="#minus"></use>
+                  </svg>
+                </button>
+                <input class="cart__quantity-number" type="number" name="Количество" value="1">
+                <button class="cart__quantity-button">
+                  <svg style="width: 13rem; height: 13rem;">
+                    <use xlink:href="#plus"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="cart__price">
+                <span>18 000 ₽</span>
+                <span class="cart__price-old">23 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <button class="cart__close">
+            <div class="cart__close-inner">
+              <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                <use xlink:href="#plus"></use>
+              </svg>
+            </div>
+          </button>
+        </li>
+      </ul>
+      <div class="cart__buttons">
+        <button class="cart__button">Вход в систему мониторинга</button>
+        <button class="cart__button_1 button"><span class="button__text">Вход в систему мониторинга</span></button>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

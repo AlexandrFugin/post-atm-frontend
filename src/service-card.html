@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    @include('partials/sprite.html')
+    @include('partials/header.html')
+    <section class="breadcrumbs container">
+      <a class="breadcrumbs__item breadcrumbs__link" href="/">Главная</a>
+      <a class="breadcrumbs__item breadcrumbs__link" href="./services.html">Услуги</a>
+      <span class="breadcrumbs__item">Гарантийный и постгарантийный ремонт POS-терминалов VeriFone и PAX</span>
+    </section>
+    
+    <section class="service container">
+      <h1 class="service__title title_1">Гарантийный и постгарантийный ремонт POS-терминалов VeriFone и PAX</h1>
+      <div class="service__text">
+        Компания предлагает комплексное сервисное обслуживание банкоматов и платежных терминалов в любой точке республики.<br>
+        В сервисном центре компании мы восстанавливаем все узлы банкоматов и платежных терминалов , включая материнские платы, контроллеры и блоки питания.<br><br>
+
+        В состав услуг комплексного технического обслуживания банкоматов и терминалов входят.<br><br>
+
+        <h2 class="service__item">Пакет услуг FLM (First Line Maintenance)</h2>
+        Первичная диагностика УС с использованием возможностей стандартного ПО, установленного на УС.
+        <br>Сброс ошибок УС, перезагрузка УС. <br><br>
+
+        <h2 class="service__item">Пакет услуг SLM (Second Line Maintenance)</h2>
+        Восстановление работоспособности УС, включая ремонт, настройку, регулировку аппаратных узлов.<br>
+        Восстановление работоспособности УС с заменой вышедших из строя аппаратных узлов и блоков.
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

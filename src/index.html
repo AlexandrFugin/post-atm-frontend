@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    @include('partials/sprite.html')
+    @include('partials/header.html')
+
+    <main class="main swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide main__item" style="background: linear-gradient(90deg, rgba(32, 32, 32, 0.64) 0%, rgba(32, 32, 32, 0.16) 100%), url('./img/main_bg.jpg') no-repeat center / cover;">
+          <div class="container">
+            <h1 class="main__title">Авторизированный сервисный центр</h1>
+            <p class="main__description text">Сопровождение сетей устройств самообслуживания, кассового и эквайрингового оборудования на территории республики Башкортостан</p>
+            <button class="main__button button"><span class="button__text">Вход в систему мониторинга</span></button>
+          </div>
+        </div>
+        <div class="swiper-slide main__item" style="background: linear-gradient(90deg, rgba(32, 32, 32, 0.64) 0%, rgba(32, 32, 32, 0.16) 100%), url('./img/main_bg_1.jpg') no-repeat center / cover;">
+          <div class="container">
+            <h1 class="main__title">Авторизированный сервисный центр</h1>
+            <p class="main__description main__description_orange text">Гарантийный, постгарантийный ремонт и сопровождение POS терминального оборудования VeriFone, PAX</p>
+            <button class="main__button button button_orange"><span class="button__text">Вход в систему мониторинга</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="main__arrows container">
+        <button class="swiper-button-prev"><svg style="width: 12rem; height: 19rem;"><use xlink:href="#arrow"></use></svg></button>
+        <button class="swiper-button-next"><svg style="width: 12rem; height: 19rem; transform: rotate(180deg);"><use xlink:href="#arrow"></use></svg></button>
+      </div>
+    </main>
+
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__title title">Официальный <span>партнер</span></h2>
+        <div class="partners__row">
+          <div class="partners__item"><img src="./img/partners/1.png" width="128" height="56" alt="INPAS"></div>
+          <div class="partners__item"><img src="./img/partners/2.png" width="109" height="56" alt="TM Сервис"></div>
+          <div class="partners__item"><img src="./img/partners/3.jpg" width="206" height="28" alt="PBF Group"></div>
+          <div class="partners__item"><img src="./img/partners/4.png" width="190" height="56" alt="Сервис Плюс"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title title title_white">О компании в цифрах</h2>
+        <ul class="about__list">
+          <li class="about__item">
+            <span class="about__number">3000</span>
+            <p class="about__description">Выполнение 3000 сервисных заявок в месяц</p>
+          </li>
+          <li class="about__item">
+            <span class="about__number">1000</span>
+            <p class="about__description">Ремонт 1000 единиц терминального оборудования в месяц</p>
+          </li>
+          <li class="about__item">
+            <span class="about__number">16</span>
+            <p class="about__description">16 филиалов на территории Республики</p>
+          </li>
+          <li class="about__item">
+            <span class="about__number">39</span>
+            <p class="about__description">39 сервис - инженера на территории Республики</p>
+          </li>
+          <li class="about__item">
+            <span class="about__number">7</span>
+            <p class="about__description">Сервисная поддержка 7 дней в неделю</p>
+          </li>
+          <li class="about__item">
+            <span class="about__number">3</span>
+            <p class="about__description">3 часа минимальный срок реакции на заявку в крупных городах Республики</p>
+          </li>
+          <li class="about__item">
+            <span class="about__number">10</span>
+            <p class="about__description">Опыт обслуживания банковского оборудования более 10 лет</p>
+          </li>
+          <li class="about__item">
+            <span class="about__number">98%</span>
+            <p class="about__description">Уровень SLA по заявкам 98%</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <h2 class="clients__title title">Наши <span>клиенты</span></h2>
+        <ul class="clients__list">
+          <li class="clients__item"><img class="clients__image" width="188" height="56" src="./img/clients/1.svg" alt="Уралсиб"></li>
+          <li class="clients__item"><img class="clients__image" width="36" height="56" src="./img/clients/2.svg" alt="Альфа Банк"></li>
+          <li class="clients__item"><img class="clients__image" width="118" height="56" src="./img/clients/3.svg" alt="Почта Банк"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="44" src="./img/clients/4.svg" alt="Газпромбанк"></li>
+          <li class="clients__item"><img class="clients__image" width="186" height="56" src="./img/clients/5.png" alt="Новикомбанк"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="40" src="./img/clients/6.svg" alt="Тинькофф"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="52" src="./img/clients/7.svg" alt="Райффайзен Банк"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="20" src="./img/clients/8.svg" alt="Москоммерцбанк"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="40" src="./img/clients/9.svg" alt="Формабанк"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="36" src="./img/clients/10.svg" alt="Открытие"></li>
+          <li class="clients__item"><img class="clients__image" width="134" height="22" src="./img/clients/11.svg" alt="МТС Банк"></li>
+          <li class="clients__item"><img class="clients__image" width="126" height="87" src="./img/clients/12.png" alt="РоссельхозБанк"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="48" src="./img/clients/13.svg" alt="СМП БАНК"></li>
+          <li class="clients__item"><img class="clients__image" width="188" height="38" src="./img/clients/14.png" alt="Просто Банк"></li>
+          <li class="clients__button">
+            <button class="clients__button-inner button">
+              <span class="button__text">Вход в систему мониторинга</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts__title title">Контактная <span>информация</span></h2>
+      <div class="contacts__map" id="map">
+        <div class="contacts__info">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__item-name">Адрес головного офиса</h3>
+              <p class="contacts__item-text">Уфа, Российская, 11</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-name">Телефон</h3>
+              <a class="contacts__item-link" href="tel:88002343475">8(800) 234 34 75</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-name">Почта</h3>
+              <a class="contacts__item-link" href="mailto:service@pos-atm.ru">service@pos-atm.ru</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-name">Режим работы</h3>
+              <p class="contacts__item-text">Пн-Пт с 9:00 - 18:00</p>
+            </li>
+            <li class="contacts__social">
+              <ul class="contacts__social-list">
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <svg style="width: 21rem; height: 18rem;">
+                      <use xlink:href="#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <svg style="width: 23rem; height: 15rem;">
+                      <use xlink:href="#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <svg style="width: 24rem; height: 24rem;">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

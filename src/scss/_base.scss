@@ -1,0 +1,110 @@
+.page {
+	font-size: 1px;
+	overflow-x: hidden;
+	&._lock{
+		overflow: hidden;
+	}
+	@media only screen and (max-width: 1420px){
+		font-size: .07vw;
+	}
+	@media only screen and (max-width: 991px){
+		font-size: 1px;
+	}
+	@media only screen and (max-width: 359px){
+		font-size: 0.277vw;
+	}
+}
+.page__body {
+	font-family: $manrope;
+	font-size: 18rem;
+	line-height: 1.405;
+	font-weight: 400;
+	color: $dark;
+	background: -8rem 0/750rem url("../img/pattern.png"), #f9fafa;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	right: 0;
+	@media screen and (max-width: 991px) {
+		background-position: center 25rem;
+	}
+	@media screen and (max-width: 767px) {
+		background-position: calc(50% + 196rem) 0;
+	}
+}
+.container {
+	width: 100%;
+	max-width: 1416rem;
+	margin: 0 auto;
+	padding: 0 100rem;
+	@media screen and (max-width: 991px){
+		max-width: 768rem;
+		padding: 0 20rem;
+	}
+	@media screen and (max-width: 767px){
+		max-width: 360rem;
+		padding: 0 15rem;
+	}
+}
+// Для базовой доступности
+.sr-only{
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	margin: -1rem;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+}
+
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15rem;
+	line-height: 20rem;
+	letter-spacing: 0.01em;
+	margin-top: 30rem;
+	@media screen and (max-width: 767px) {
+		font-size: 12rem;
+		line-height: 16rem;
+		letter-spacing: -0.01em;
+		margin-top: 15rem;
+	}
+	&__item {
+		color: #cbd3da;
+		position: relative;
+		&:nth-child(n+2){
+			padding-left: 14rem;
+			&::before{
+				content: '';
+				display: inline-block;
+				width: 2rem;
+				height: 2rem;
+				position: absolute;
+				top: 50%;
+				left: 6rem;
+				transform: translateY(-50%);
+				background-color: #cbd3da;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			display: none;
+			&:first-child, &:last-child{
+				display: block;
+			}
+			&:last-child{
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: calc(100% - 46rem);
+			}
+		}
+	}
+	&__link {
+		color: #79b5f0;
+	}
+}

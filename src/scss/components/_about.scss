@@ -1,0 +1,224 @@
+.about{
+	background: url('../img/about_bg.jpg') no-repeat center / cover;
+	padding: 80rem 0 140rem;
+	overflow: hidden;
+	@media screen and (max-width: 991px) {
+		padding: 60rem 0 80rem;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 30rem 0 40rem;
+	}
+	.container{
+		position: relative;
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 1rem;
+			height: calc(100% + 220rem);
+			position: absolute;
+			top: -80rem;
+			left: 100rem;
+			background-color: rgba(255, 255, 255, 0.05);
+			@media screen and (max-width: 991px) {
+				top: -60rem;
+				left: 20rem;
+			}
+			@media screen and (max-width: 767px) {
+				left: 14rem;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			&::after{
+				content: '';
+				display: inline-block;
+				width: 1rem;
+				height: calc(100% + 220rem);
+				position: absolute;
+				top: -60rem;
+				right: 20rem;
+				background-color: rgba(255, 255, 255, 0.05);
+			}
+		}
+		@media screen and (max-width: 767px) {
+			&::after{
+				right: 14rem;
+			}
+		}
+	}
+	&__title{
+		@media screen and (max-width: 767px) {
+			text-align: left;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 60rem;
+		@media screen and (max-width: 991px) {
+			margin-top: 22rem;
+		}
+		@media screen and (max-width: 767px) {
+			margin-top: 18rem;
+		}
+	}
+	&__item {
+		flex-basis: 392rem;
+		position: relative;
+		padding: 30rem 60rem 30rem 40rem;
+		@media screen and (max-width: 991px) {
+			flex-basis: 354rem;
+			padding: 0 20rem 0 40rem;
+		}
+		@media screen and (max-width: 767px) {
+			flex-basis: 160rem;
+			padding: 0;
+		}
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 1rem;
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.05);
+		}
+		&:nth-child(1){
+			&::before{
+				height: 305rem;
+				top: -197rem;
+				left: 0;
+				@media screen and (max-width: 991px) {
+					display: none;
+				}
+			}
+		}
+		&:nth-child(2){
+			&::before{
+				height: 305rem;
+				top: -197rem;
+				left: 0;
+				@media screen and (max-width: 991px) {
+					display: none;
+				}
+			}
+		}
+		&:nth-child(4){
+			&::before{
+				height: 482rem;
+				top: -407rem;
+				left: 0;
+				@media screen and (max-width: 767px) {
+					width: 1rem;
+					height: 600rem;
+					top: -200rem;
+					right: 20rem;
+				}
+			}
+		}
+		&:nth-child(6){
+			&::before{
+				height: 500rem;
+				top: 34rem;
+				left: 0;
+				@media screen and (max-width: 767px) {
+					display: none;
+				}
+			}
+		}
+		&:nth-child(7){
+			&::before{
+				height: 290rem;
+				top: 30rem;
+				left: 0;
+				@media screen and (max-width: 991px) {
+					display: none;
+				}
+			}
+		}
+		&:nth-child(8){
+			&::before{
+				height: 290rem;
+				top: 30rem;
+				left: 0;
+				@media screen and (max-width: 991px) {
+					display: none;
+				}
+			}
+		}
+		
+		&:nth-child(6n + 1){
+			margin-left: 206rem;
+			@media screen and (max-width: 991px) {
+				margin-left: 0;
+			}
+		}
+		&:nth-child(even){
+			margin-left: 226rem;
+			@media screen and (max-width: 991px) {
+				margin-left: 20rem;
+			}
+			@media screen and (max-width: 767px) {
+				margin-left: 10rem;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			&:nth-child(n+3){
+				margin-top: 21rem;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			&:nth-child(n+3){
+				margin-top: 19rem;
+			}
+		}
+	}
+	&__number {
+		font-family: $raleway;
+		font-weight: 700;
+		font-size: 56rem;
+		line-height: 1.4;
+		letter-spacing: 0.02em;
+		color: #fff;
+		text-transform: uppercase;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		position: relative;
+		@media screen and (max-width: 767px) {
+			font-size: 24rem;
+			margin-left: 13rem;
+		}
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 4rem;
+			height: 78rem;
+			position: absolute;
+			top: 0;
+			left: -40rem;
+			background: #ff5707;
+			box-shadow: 0 0 25rem #fe5808;
+			@media screen and (max-width: 991px) {
+				width: 3rem;
+				height: 60rem;
+				margin-top: 12rem;
+			}
+			@media screen and (max-width: 767px) {
+				height: 34rem;
+				margin-top: 0;
+				left: -13rem;
+			}
+		}
+	}
+	&__description {
+		font-weight: 500;
+		font-size: 16rem;
+		line-height: 1.4;
+		color: rgba(255, 255, 255, 0.85);
+		letter-spacing: -0.032em;
+		margin-top: 8rem;
+		@media screen and (max-width: 767px) {
+			font-size: 13rem;
+			line-height: 18rem;
+			left: -13rem;
+			margin-top: 6rem;
+			letter-spacing: -0.042em;
+		}
+	}
+}

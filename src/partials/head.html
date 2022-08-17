@@ -1,0 +1,64 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>MaxGraph New Site</title>
+  <link rel="preload" href="./fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Manrope-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=602b4be8-351f-4479-b0d1-01fbe90b5c9f&lang=ru_RU"></script>
+  <script>
+    function init() {
+      let center = [54.79071306987514,56.04231549999998];
+      let map = new ymaps.Map('map', {
+        center: center,
+        zoom: 16,
+      });
+
+      let placemark = new ymaps.Placemark(center, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: './img/svg/marker.svg',
+        iconImageSize: [40, 38.4],
+        iconImageOffset: [-10, -10],
+      });
+
+      map.controls.remove('geolocationControl'); // удаляем геолокацию
+      map.controls.remove('searchControl'); // удаляем поиск
+      map.controls.remove('trafficControl'); // удаляем контроль трафика
+      map.controls.remove('typeSelector'); // удаляем тип
+      map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+      map.controls.remove('rulerControl'); // удаляем контрол правил
+      map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+      map.geoObjects.add(placemark);
+    }
+
+    ymaps.ready(init)
+  </script>
+  <script defer src="./js/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var mainSlider = new Swiper('.main', {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        speed: 300,
+        allowTouchMove: false,
+        navigation: {
+          prevEl: '.main .swiper-button-prev',
+          nextEl: '.main .swiper-button-next',
+          clickable: true,
+        },
+      });
+    });
+  </script>
+  <script defer src="./js/jquery-3.6.0.min.js"></script>
+  <script defer src="./js/main.js"></script>
+</head>

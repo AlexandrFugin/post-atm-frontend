@@ -1,19 +1,23 @@
 .header {
 	background-color: #fff;
 	box-shadow: 0 10rem 10rem rgba(98, 107, 115, 0.03);
+
 	&__container {
 		display: grid;
 		grid-template-columns: 186rem 370rem 371rem 289rem;
 		grid-template-rows: 97rem 64rem;
+
 		@media screen and (max-width: 991px) {
 			grid-template-columns: 166rem 313rem 249rem;
 			grid-template-rows: 80rem 64rem;
 		}
+		
 		@media screen and (max-width: 767px) {
 			grid-template-columns: 110rem 220rem;
 			grid-template-rows: 64rem 60rem;
 		}
 	}
+
 	&__logo {
 		grid-area: 1 / 1 / 3 / 2;
 		display: flex;
@@ -22,11 +26,13 @@
 		border-width: 0 1rem;
 		border-style: solid;
 		border-color: rgba(0, 0, 0, 0.05);
+
 		@media screen and (max-width: 767px) {
 			grid-area: 1 / 1 / 2 / 2;
 			border-bottom: 1rem solid rgba(0, 0, 0, 0.05);
 			border-right: none;
 		}
+
 		&-image{
 			width: 106rem;
 			height: 81rem;
@@ -36,6 +42,7 @@
 			}
 		}
 	}
+
 	&__geolocation {
 		grid-area: 1 / 2 / 2 / 3;
 		display: flex;

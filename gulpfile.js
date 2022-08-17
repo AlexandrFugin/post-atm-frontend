@@ -22,6 +22,7 @@ const htmlmin = require('gulp-htmlmin');
 const gulpif = require('gulp-if');
 const notify = require('gulp-notify');
 const image = require('gulp-imagemin');
+const sourceMaps = require('gulp-sourcemaps');
 const {
   readFileSync
 } = require('fs');
@@ -52,6 +53,12 @@ const paths = {
 };
 
 let isProd = false; // dev by default
+
+const mode = require('gulp-mode')({
+  modes: ['production', 'development'],
+  default: 'development',
+  verbose: false,
+});
 
 const clean = () => {
   return del([buildFolder])
@@ -93,6 +100,7 @@ const svgSprites = () => {
 // scss styles
 const styles = () => {
   return src(paths.srcScss, { sourcemaps: !isProd })
+    .pipe(mode.development(sourceMaps.init()))
     .pipe(plumber(
       notify.onError({
         title: "SCSS",
@@ -108,6 +116,7 @@ const styles = () => {
     .pipe(gulpif(isProd, cleanCSS({
       level: 2
     })))
+    .pipe(mode.development(sourceMaps.write()))
     .pipe(dest(paths.buildCssFolder, { sourcemaps: '.' }))
     .pipe(browserSync.stream());
 };

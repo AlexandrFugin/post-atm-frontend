@@ -110,6 +110,10 @@
 			will-change: transform;
 			transition: transform 0.15s;
 		}
+		&-noarrow{
+				position: relative;
+				letter-spacing: 0.044em;
+			}
 	}
 }
 .button_orange{

@@ -10,7 +10,7 @@
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 18rem;
+		font-size: 17rem;
 		line-height: 1.5;
 		margin-top: 40rem;
 		a{
@@ -26,5 +26,11 @@
 	}
 	&__item {
 		font-weight: 700;
+	}
+	&__par{
+		&::marker {
+			// color: lightgreen;
+    		font-size: 12.5px;
+		}
 	}
 }

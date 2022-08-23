@@ -68,6 +68,9 @@
 			line-height: 19rem;
 			text-transform: uppercase;
 			color: #acb7c1;
+			&:hover{
+				color: #FFFFFF;
+			}
 			@media screen and (max-width: 767px) {
 				font-size: 12rem;
 				line-height: 16rem;
@@ -147,6 +150,9 @@
 		line-height: 1.4;
 		letter-spacing: -0.03em;
 		color: #fff;
+		&:hover{
+			color: #FF5707;
+		}
 		@media screen and (max-width: 767px) {
 			font-size: 11rem;
 			line-height: 15rem;
@@ -169,9 +175,6 @@
 		span{
 			will-change: color;
 			transition: color 0.1s;
-			&:hover{
-				color: #fff;
-			}
 		}
 		svg {
 			margin-left: 10rem;
@@ -182,9 +185,12 @@
 				width: 55rem!important;
 				height: 22rem!important;
 			}
-			&:hover{
-				fill: $orange;
-			}
+		}
+		&:hover span{
+			color: #fff;
+		}
+		&:hover svg{
+			fill: $orange;
 		}
 	}
 }

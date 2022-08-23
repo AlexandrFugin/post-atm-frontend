@@ -17,6 +17,7 @@
 		text-transform: uppercase;
 		font-feature-settings: 'pnum' on, 'lnum' on;
 		color: #e9eef2;
+		margin-top: -45rem;
 		@media screen and (max-width: 767px) {
 			font-size: 160rem;
 		}
@@ -29,7 +30,7 @@
 		text-transform: uppercase;
 		font-feature-settings: 'pnum' on, 'lnum' on;
 		color: #4a5c6d;
-		margin-top: -45rem;
+		// margin-top: -45rem;
 		@media screen and (max-width: 767px) {
 			max-width: 332rem;
 			font-size: 18rem;
@@ -40,10 +41,19 @@
 		margin-top: 30rem;
 		padding-top: 30rem;
 		padding-bottom: 30rem;
+		width: 330rem;
 		@media screen and (max-width: 767px) {
 			width: 332rem;
 			max-width: 100%;
 			margin-top: 10rem;
+		}
+
+	}
+	&__text {
+		&::after{
+			// content: '';
+			display: none;
+			// background: url('../img/svg/button_arrow.svg') no-repeat center / contain;
 		}
 	}
 }

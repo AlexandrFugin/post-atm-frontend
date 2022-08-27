@@ -26,63 +26,97 @@
 		justify-content: center;
 		align-items: center;
 		padding: 20rem;
+
 		&:nth-child(1){
 			img{
 				width: 128rem;
 				height: 56rem;
-				// background: url('../../img/partners/1.png') no-repeat center;
+				filter: grayscale(1);
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
+				&:hover{
+					filter: grayscale(0);
+					transition: all 0.8s ease 0s;
+				}
 			}
-			// &:hover{
-			// 	background: url('../../img/partners/1_colour.png') no-repeat center;
-			
-			// }
 		}
+
 		&:nth-child(2){
 			img{
 				width: 109rem;
 				height: 56rem;
+				filter: grayscale(0);
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
+				&:hover{
+					filter: grayscale(1);
+					transition: all 0.8s ease 0s;
+				}
 			}
-			// &:hover{
-			// 	background: url('../../img/partners/2_colour.png') no-repeat center;
-			// }
 		}
 		&:nth-child(3){
 			img{
 				width: 206rem;
 				height: 28rem;
+				filter: grayscale(1);
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
+				&:hover{
+					filter: grayscale(0);
+					transition: all 0.8s ease 0s;
+				}
 			}
-			// &:hover{
-			// 	background: url('../../img/partners/3_colour.png') no-repeat center;
-			// }
 		}
 		&:nth-child(4){
 			img{
 				width: 190rem;
 				height: 56rem;
+				filter: grayscale(1);
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
+				&:hover{
+					filter: grayscale(0);
+					transition: all 0.8s ease 0s;
+				}
 			}
-			// &:hover{
-			// 	background: url('../../img/partners/4_colour.png') no-repeat center;
-			// }
 		}
 		&:not(:last-child){
 			border-right: 1rem solid #eef5fc;
 		}
+
+
+		
+		&:nth-child(1){
+
+			&:hover {
+				.partners__hidden-img1 {
+					display: none;
+				}
+				.partners__visible-img1 {
+					display: block;
+				}
+			}
+		}
+		
+
+		&:nth-child(2){
+			.partners__hidden-img2 {
+				display: none;
+			}
+			.partners__visible-img2 {
+				display: block;
+			}
+		}
+		
+
 		@media screen and (max-width: 767px) {
 			&:not(:last-child){
 				border-bottom: 1rem solid #eef5fc;

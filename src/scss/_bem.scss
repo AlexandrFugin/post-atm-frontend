@@ -131,4 +131,7 @@
 	@media screen and (max-width: 767px) {
 		padding: 30rem 10rem;
 	}
+	&::before{
+		background-color: #FF702D;
+	}
 }

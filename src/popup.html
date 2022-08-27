@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="ru" class="page">
+
+        @include('partials/head.html')
+        
+        <body class="page__body">
+            @include('partials/sprite.html')
+            @include('partials/header.html')
+            <section class="popup">
+                <!-- <button class="cart__close"> -->
+                <div class="popup__request">
+                    <div class="popup__pic cart__close-inner">
+                      <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </div>
+                  <!-- </button> -->
+                  <div class="cart__clipboard">
+                    <img src="./img/svg/clipboard.svg" alt="">
+                  </div>
+                  <h2 class="popup__title">Ваша заявка успешно отправлена</h2>
+                  <p class="popup__text popup__text-request">Мы свяжемся с вами в ближайшее время</p>
+                </div>
+                <div class="popup__basket">
+                    <h2 class="popup__title popup__title-basket">Товар успешно добавлен в корзину</h2>
+                    <div class="popup__buttons">
+                        <button class="popup__addbasketbtn button popup__addbasketbtn-white">
+                            <span class="popup__textBtnWhite button__text-noarrow">Продолжить покупки</span>
+                        </button>
+                        <button class="popup__addbasketbtn button popup__addbasketbtn-blue">
+                            <span class="popup__textBtnBlue button__text-noarrow">Перейти в корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="popup__callback">
+                    <div class="popup__pic cart__close-inner">
+                        <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                          <use xlink:href="#plus"></use>
+                        </svg>
+                      </div>
+                    <h2 class="popup__title">Обратный звонок</h2>
+                    <p class="popup__text popup__text-callback">Оставьте заявку, и мы перезвоним Вам в ближайшее время.</p>
+                    <div class="popup__contTel">
+                        <svg class="popup__contTel-pic"></svg>
+                        <input class="popup__contTel-inputTel" type="tel" placeholder="+7(___) ___ __-__*">
+                    </div>
+                    <button class="popup__callbackBtn button">
+                        <span class="popup__textBtnBlue button__text-noarrow">Перезвоните мне</span>
+                    </button>
+                    <p class="popup__text popup__text-persdata">Нажимая кнопку «Перезвоните мне», вы соглашаетесь с<br> <a class="popup__text-persdata-conf" href="../confidentiality.html">политикой обработки персональных данных</a></p>
+                </div>
+                <div class="popup__callback">
+                  <div class="popup__pic cart__close-inner">
+                      <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </div>
+                  <h2 class="popup__title">Оформление заказа</h2>
+                  <p class="popup__text popup__text-callback">Введите номер телефона, с вами свяжется оператор в ближайшее время</p>
+                  <div class="popup__contTel">
+                      <svg class="popup__contTel-pic"></svg>
+                      <input class="popup__contTel-inputTel" type="tel" placeholder="+7(___) ___ __-__*">
+                  </div>
+                  <button class="popup__callbackBtn button">
+                      <span class="popup__textBtnBlue button__text-noarrow">Оставить заявку</span>
+                  </button>
+                  <p class="popup__text popup__text-persdata">Нажимая кнопку «Перезвоните мне», вы соглашаетесь с<br> <a class="popup__text-persdata-conf" href="../confidentiality.html">политикой обработки персональных данных</a></p>
+              </div>
+              <div class="popup__cookie">
+                <p class="popup__text popup__text-cookie">Мы используем cookie-файлы. С их помощью мы заботимся о вас, улучшая работу этого сайта</p>
+                <div class="popup__pic cart__close-inner">
+                  <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                    <use xlink:href="#plus"></use>
+                  </svg>
+                </div>
+              </div>
+            </section>
+            @include('partials/footer.html')
+        </body>
+        </html>

@@ -45,7 +45,7 @@ const paths = {
   buildImgFolder: `${buildFolder}/img`,
   srcScss: `${srcFolder}/scss/**/*.scss`,
   buildCssFolder: `${buildFolder}/css`,
-  srcFullJs: `${srcFolder}/js/**/*.js`,
+  srcFullJs: `${srcFolder}/script/**/*.js`,
   srcMainJs: `${srcFolder}/script/*.js`,
   buildJsFolder: `${buildFolder}/js`,
   srcPartialsFolder: `${srcFolder}/partials`,

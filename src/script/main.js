@@ -16,30 +16,54 @@ $(document).ready(function(){
 	});
 
 	const btnPopup = document.querySelectorAll('[data-open-popup]');
-	// const popup = document.querySelector('.pop');
+	const btnPopupClose = document.querySelectorAll('[data-close-popup]');
+	const btnPopupCallback = document.querySelectorAll('[data-callback-popup]');
+	const btnOpenPopupRequest = document.querySelectorAll('[data-open-request]');
 	const html = document.querySelector('html');
 
+
 	btnPopup.forEach(item => {
-		let getAttributPopup = item.getAttribute('data-open-popup')
-		console.log(item.getAttribute('data-open-popup'))
+		let getAttributPopup = item.getAttribute('data-open-popup');
 		item.addEventListener('click', (e) => {
 			let popup = document.getElementById(getAttributPopup);
-			if(popup){
-				console.log(popup, 'sdsdsdsd')
-			}
-			
-			popup.classList.add('pop__active');
+			popup.classList.add('popup_background__active');
 			html.classList.add('overflove-hidden');
 		} );
-	})
-	
-	
-	// btnPopup.addEventListener('click', (e) => {
-	// 	// e.stopPropagation();
-	// 	popup.classList.add('pop__active');
-	// 	html.classList.add('overflove-hidden');
-	// 	console.log('rdgbfbfg')
-	// } );
+	});
+
+	btnPopupClose.forEach(item => {
+		let getAttributPopup = item.getAttribute('data-close-popup')
+		item.addEventListener('click', (e) => {
+			let popup = document.getElementById(getAttributPopup);
+			
+			popup.classList.remove('popup_background__active');
+			popup.classList.remove('popup_background_request__active');
+			popup.classList.remove('popup_background_callback__active');
+			html.classList.remove('overflove-hidden');
+		} );
+	});
+
+	btnPopupCallback.forEach(item => {
+		let getAttributPopup = item.getAttribute('data-callback-popup');
+		item.addEventListener('click', (e) => {
+			let popup = document.getElementById(getAttributPopup);
+			popup.classList.add('popup_background_callback__active');
+			html.classList.add('overflove-hidden');
+		} );
+	});
+
+	btnOpenPopupRequest.forEach(item => {
+		let getAttributPopup = item.getAttribute('data-open-request');
+		const popupBackground = document.querySelector('.popup_background');
+		const popupBackgroundCallback = document.querySelector('.popup_background_callback');
+		item.addEventListener('click', (e) => {
+			let popup = document.getElementById(getAttributPopup);
+			if (popupBackground) { popupBackground.classList.remove('popup_background__active');}
+			if (popupBackgroundCallback) { popupBackgroundCallback.classList.remove('popup_background_callback__active'); }
+			popup.classList.add('popup_background_request__active');
+			html.classList.add('overflove-hidden');
+		} );
+	});
 
 });
 

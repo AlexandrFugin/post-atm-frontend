@@ -751,6 +751,19 @@
           </div>
         </div>
       </div>
+      <div class="popupContBasket">
+        <div class="popup__basket">
+          <h2 class="popup__title popup__title-basket">Товар успешно добавлен в корзину</h2>
+          <div class="popup__buttons">
+              <button class="popup__addbasketbtn button popup__addbasketbtn-white">
+                  <span class="popup__textBtnWhite button__text-noarrow">Продолжить покупки</span>
+              </button>
+              <button class="popup__addbasketbtn button popup__addbasketbtn-blue" onclick="window.location.href = './cart.html';">
+                  <span class="popup__textBtnBlue button__text-noarrow">Перейти в корзину</span>
+              </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     @include('partials/footer.html')

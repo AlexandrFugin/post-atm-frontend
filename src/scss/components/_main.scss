@@ -1,5 +1,6 @@
 .main{
 	position: relative;
+	// height: 81vh;
 	&__item{
 		position: relative;
 		.container{
@@ -167,7 +168,46 @@
 		}
 	}
 }
-.pop{
+.popup_background{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(154, 154, 154, 0.5);
+	z-index: 5;
+	display: none;
+	&__active{
+		display: block;
+	}
+}
+.popup_background_request{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(154, 154, 154, 0.5);
+	z-index: 5;
+	display: none;
+	&__active{
+		display: block;
+	}
+}
+.popup_background_callback{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(154, 154, 154, 0.5);
+	z-index: 5;
+	display: none;
+	&__active{
+		display: block;
+	}
+}
+.popupContBasket{
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -264,6 +304,8 @@
 		max-width: 728rem;
 		min-height: 269rem;
 		margin: auto;
+		margin-top: 10%;
+		background: #FFFFFF;
 	}
 	&__buttons{
 		display: flex;
@@ -293,6 +335,8 @@
 		align-items: center;
 		max-width: 470px;
 		margin: auto;
+		margin-top: 8%;
+		background-color: #FFFFFF;
 	}
 	&__contTel{
 		width: 350rem;
@@ -307,7 +351,8 @@
 			width: 25rem;
 			background: url(../../img/svg/phone_1.svg) center;
 			background-size: cover;
-			margin-right: 10px;
+			margin-right: 10rem;
+			margin-left: 25rem;
 		}
 		&-inputTel{
 			width: 280px;

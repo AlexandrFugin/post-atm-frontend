@@ -1,6 +1,7 @@
 .page {
 	font-size: 1px;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 	&._lock{
 		overflow: hidden;
 	}

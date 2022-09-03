@@ -16,13 +16,13 @@
         <h1 class="shop__title title_1">Интернет магазин</h1>
         <nav class="shop__navigation">
           <ul class="shop__navigation-list">
-            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#details">Запчасти для банкоматов</a></li>
-            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#details">POS-терминалы</a></li>
-            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#details">Расходные материалы (чековая лента)</a></li>
+            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#spare_parts">Запчасти для банкоматов</a></li>
+            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#pos">POS-терминалы</a></li>
+            <li class="shop__navigation-item"><a class="shop__navigation-link" href="#consumables">Расходные материалы (чековая лента)</a></li>
           </ul>
         </nav>
       </div>
-      <div class="shop__category">
+      <div class="shop__category" id="spare_parts">
         <div class="container">
           <div class="shop__category-heading">
             <h2 class="shop__category-title">Запчасти для банкоматов</h2>
@@ -67,7 +67,7 @@
                       </svg>
                     </button>
                   </div>
-                  <button class="shop__cart">В корзину</button>
+                  <button class="shop__cart" data-shop-cart="popup_cart">В корзину</button>
                 </div>
               </div>
             </li>
@@ -259,7 +259,7 @@
           </div>
         </div>
       </div>
-      <div class="shop__category">
+      <div class="shop__category" id="pos">
         <div class="container">
           <div class="shop__category-heading">
             <h2 class="shop__category-title">Pos-терминалы</h2>
@@ -502,7 +502,7 @@
           </div>
         </div>
       </div>
-      <div class="shop__category">
+      <div class="shop__category" id="consumables">
         <div class="container">
           <div class="shop__category-heading">
             <h2 class="shop__category-title">Расходные материалы</h2>
@@ -751,11 +751,48 @@
           </div>
         </div>
       </div>
-      <div class="popupContBasket">
+      <div class="popup_background" id="popup_cart">
+        <div class="popup__cart">
+          <img class="shop__product-image_popup" src="./img/product.jpg" alt="Изображение товара" width="289" height="289">
+          <div class="shop__product-info_popup">
+            <div class="shop__conteiner">
+              <h3 class="shop__product-title_popup">VeriFone VX 520 CTLS Ethernet (стационарный, подключение по локальной сети)</h3>
+              <div class="popup__pic popup__pic-cart cart__close-inner cart__close-no_border cart__close-small" data-close-popup="popup_cart">
+                <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
+                  <use xlink:href="#plus"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+            <div class="shop__product-price">
+              <span>18 000 ₽</span>
+              <span class="shop__product-old">23 000 ₽</span>
+            </div>
+            <div class="shop__product-row shop__product-popup">
+            <div class="shop__quantity">
+                <button class="shop__quantity-button">
+                  <svg style="width: 13rem; height: 2rem;">
+                    <use xlink:href="#minus"></use>
+                  </svg>
+                </button>
+                <input class="shop__quantity-number" type="number" name="Количество" value="1">
+                <button class="shop__quantity-button">
+                  <svg style="width: 13rem; height: 13rem;">
+                    <use xlink:href="#plus"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="shop__cart_popup" data-open-cart="popupContBasket">В корзину</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popupContBasket" id="popupContBasket">
         <div class="popup__basket">
           <h2 class="popup__title popup__title-basket">Товар успешно добавлен в корзину</h2>
           <div class="popup__buttons">
-              <button class="popup__addbasketbtn button popup__addbasketbtn-white">
+              <button class="popup__addbasketbtn button popup__addbasketbtn-white" data-close-popup="popupContBasket">
                   <span class="popup__textBtnWhite button__text-noarrow">Продолжить покупки</span>
               </button>
               <button class="popup__addbasketbtn button popup__addbasketbtn-blue" onclick="window.location.href = './cart.html';">

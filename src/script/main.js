@@ -19,6 +19,8 @@ $(document).ready(function(){
 	const btnPopupClose = document.querySelectorAll('[data-close-popup]');
 	const btnPopupCallback = document.querySelectorAll('[data-callback-popup]');
 	const btnOpenPopupRequest = document.querySelectorAll('[data-open-request]');
+	const btnShopBuy = document.querySelectorAll('.shop__cart');
+	const btnOpenPopupCart = document.querySelectorAll('[data-open-cart]');
 	const html = document.querySelector('html');
 
 
@@ -39,6 +41,7 @@ $(document).ready(function(){
 			popup.classList.remove('popup_background__active');
 			popup.classList.remove('popup_background_request__active');
 			popup.classList.remove('popup_background_callback__active');
+			popup.classList.remove('popupContBasket__active');
 			html.classList.remove('overflove-hidden');
 		} );
 	});
@@ -61,6 +64,26 @@ $(document).ready(function(){
 			if (popupBackground) { popupBackground.classList.remove('popup_background__active');}
 			if (popupBackgroundCallback) { popupBackgroundCallback.classList.remove('popup_background_callback__active'); }
 			popup.classList.add('popup_background_request__active');
+			html.classList.add('overflove-hidden');
+		} );
+	});
+
+	btnShopBuy.forEach(item => {
+		item.addEventListener('click', (e) => {
+			let popup = document.querySelector('.popup_background');
+			popup.classList.add('popup_background__active');
+			html.classList.add('overflove-hidden');
+			console.log('scsdvdxvx');
+		} );
+	});
+
+	btnOpenPopupCart.forEach(item => {
+		let getAttributPopup = item.getAttribute('data-open-cart');
+		const popupBackground = document.querySelector('.popup_background');
+		item.addEventListener('click', (e) => {
+			let popup = document.getElementById(getAttributPopup);
+			if (popupBackground) { popupBackground.classList.remove('popup_background__active');}
+			popup.classList.add('popupContBasket__active');
 			html.classList.add('overflove-hidden');
 		} );
 	});

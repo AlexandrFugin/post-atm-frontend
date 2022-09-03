@@ -104,6 +104,13 @@
 				fill: #acb7c1;
 			}
 		}
+		&-no_border{
+			border: 0;
+		}
+		&-small{
+			width: 40rem;
+			height: 40rem;
+		}
 		&:hover{
 			background-color: #ff4949;
 			.cart__close-inner{

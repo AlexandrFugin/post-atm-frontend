@@ -32,13 +32,14 @@
 				width: 128rem;
 				height: 56rem;
 				filter: grayscale(1);
+				opacity: 0.75;
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
 				&:hover{
 					filter: grayscale(0);
-					transition: all 0.8s ease 0s;
+					opacity: 1;
 				}
 			}
 		}
@@ -48,13 +49,14 @@
 				width: 109rem;
 				height: 56rem;
 				filter: grayscale(0);
+				opacity: 0.75;
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
 				&:hover{
 					filter: grayscale(1);
-					transition: all 0.8s ease 0s;
+					opacity: 1;
 				}
 			}
 		}
@@ -63,13 +65,14 @@
 				width: 206rem;
 				height: 28rem;
 				filter: grayscale(1);
+				opacity: 0.75;
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
 				&:hover{
 					filter: grayscale(0);
-					transition: all 0.8s ease 0s;
+					opacity: 1;
 				}
 			}
 		}
@@ -78,13 +81,14 @@
 				width: 190rem;
 				height: 56rem;
 				filter: grayscale(1);
+				opacity: 0.75;
 				@media screen and (max-width: 991px) {
 					width: auto;
 					height: auto;
 				}
 				&:hover{
 					filter: grayscale(0);
-					transition: all 0.8s ease 0s;
+					opacity: 1;
 				}
 			}
 		}

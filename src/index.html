@@ -13,7 +13,7 @@
           <div class="container">
             <h1 class="main__title">Авторизированный сервисный центр</h1>
             <p class="main__description text">Сопровождение сетей устройств самообслуживания, кассового и эквайрингового оборудования на территории республики Башкортостан</p>
-            <button class="main__button button" data-open-popup="popup_callback"><span class="button__text">Оставить заявку на выездное обслуживание</span></button>
+            <button class="main__button button" data-open-popup="popup_callback"><span class="button__text-exception button__text-main">Оставить заявку на выездное обслуживание</span></button>
           </div>
         </div>
         <div class="swiper-slide main__item" style="background: linear-gradient(90deg, rgba(32, 32, 32, 0.64) 0%, rgba(32, 32, 32, 0.16) 100%), url('./img/main_bg_1.jpg') no-repeat center / cover;">
@@ -35,14 +35,14 @@
         <h2 class="partners__title title">Официальный <span>партнер</span></h2>
         <div class="partners__row">
           <div class="partners__item"><img src="./img/partners/1_colour.png" width="128" height="56" alt="INPAS"></div>
-          <div class="partners__item"><img src="./img/partners/2.png" width="109" height="56" alt="TM Сервис"></div>
+          <div class="partners__item"><img src="./img/partners/2_colour.png" width="109" height="56" alt="TM Сервис"></div>
           <div class="partners__item"><img src="./img/partners/3_colour.png" width="206" height="28" alt="PBF Group"></div>
           <div class="partners__item"><img src="./img/partners/4_colour.png" width="190" height="56" alt="Сервис Плюс"></div>
         </div>          
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about_company">
       <div class="container">
         <h2 class="about__title title title_white">О компании в цифрах</h2>
         <ul class="about__list">
@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="contacts__title title">Контактная <span>информация</span></h2>
       <div class="contacts__map" id="map">
         <div class="contacts__info">
@@ -161,7 +161,7 @@
     </section>
     <div class="popup_background" id="popup_callback">
       <div class="popup__callback">
-        <div class="popup__pic cart__close-inner" data-close-popup="popup_callback">
+        <div class="popup__pic cart__close-inner cart__close-no_border" data-close-popup="popup_callback">
             <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
               <use xlink:href="#plus"></use>
             </svg>
@@ -175,12 +175,12 @@
         <button class="popup__callbackBtn button"  data-open-request="popup_request">
             <span class="popup__textBtnBlue button__text-noarrow">Оставить заявку</span>
         </button>
-        <p class="popup__text popup__text-persdata">Нажимая кнопку «Перезвоните мне», вы соглашаетесь с<br> <a class="popup__text-persdata-conf" href="../confidentiality.html">политикой обработки персональных данных</a></p>
+        <p class="popup__text popup__text-persdata">Нажимая кнопку «Перезвоните мне», вы соглашаетесь с<br> <a class="popup__text-persdata-conf" href="./confidentiality.html">политикой обработки персональных данных</a></p>
       </div>
     </div>
     <div class="popup_background_request" id="popup_request">
       <div class="popup__request">
-        <div class="popup__pic cart__close-inner" data-close-popup="popup_request">
+        <div class="popup__pic cart__close-inner cart__close-no_border" data-close-popup="popup_request">
           <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
             <use xlink:href="#plus"></use>
           </svg>
@@ -194,7 +194,7 @@
     </div>
     <div class="popup_background_callback" id="popup_callback_feedback">
       <div class="popup__callback">
-        <div class="popup__pic cart__close-inner" data-close-popup="popup_callback_feedback">
+        <div class="popup__pic cart__close-inner cart__close-no_border" data-close-popup="popup_callback_feedback">
             <svg style="width: 13rem; height: 13rem;transform: rotate(45deg);">
               <use xlink:href="#plus"></use>
             </svg>
@@ -208,7 +208,7 @@
         <button class="popup__callbackBtn button" data-open-request="popup_request">
             <span class="popup__textBtnBlue button__text-noarrow">Перезвоните мне</span>
         </button>
-        <p class="popup__text popup__text-persdata">Нажимая кнопку «Перезвоните мне», вы соглашаетесь с<br> <a class="popup__text-persdata-conf" href="../confidentiality.html">политикой обработки персональных данных</a></p>
+        <p class="popup__text popup__text-persdata">Нажимая кнопку «Перезвоните мне», вы соглашаетесь с<br> <a class="popup__text-persdata-conf" href="./confidentiality.html">политикой обработки персональных данных</a></p>
     </div>
     </div>
     @include('partials/footer.html')

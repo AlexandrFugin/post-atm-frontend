@@ -128,7 +128,7 @@
 			color: $orange;
 		}
 	}
-	
+
 	&__callback {
 		font-size: 14rem;
 		line-height: 19rem;
@@ -265,10 +265,10 @@
 				color: $main;
 				border-color: $main;
 			}
-			&._active{
-				color: $main;
-				border-color: $main;
-			}
+			//&._active{
+			//	color: $main;
+			//	border-color: $main;
+			//}
 		}
 		&-contacts {
 			display: none;

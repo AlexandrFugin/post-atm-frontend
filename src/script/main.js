@@ -1,3 +1,15 @@
+let a = document.querySelector('.shop__filters-item-checklist')
+if(a) {
+  new Choices(a, {
+    // searchEnabled: false,
+    // itemSelectText: '',
+    // classNames: {
+    //   containerInner: 'shop__filters-item-checklist'
+    // }
+  })
+}
+
+
 $(document).ready(function(){
 	function showYaMaps(){
 	 var script   = document.createElement("script");
@@ -19,9 +31,10 @@ $(document).ready(function(){
 	const btnPopupClose = document.querySelectorAll('[data-close-popup]');
 	const btnPopupCallback = document.querySelectorAll('[data-callback-popup]');
 	const btnOpenPopupRequest = document.querySelectorAll('[data-open-request]');
-	const btnShopBuy = document.querySelectorAll('.shop__cart');
+	const btnShopBuy = document.querySelectorAll('.shop__product');
 	const btnOpenPopupCart = document.querySelectorAll('[data-open-cart]');
 	const html = document.querySelector('html');
+  const headerActive = document.querySelector('.header__navigation-list');
 
 
 	btnPopup.forEach(item => {
@@ -37,7 +50,7 @@ $(document).ready(function(){
 		let getAttributPopup = item.getAttribute('data-close-popup')
 		item.addEventListener('click', (e) => {
 			let popup = document.getElementById(getAttributPopup);
-			
+
 			popup.classList.remove('popup_background__active');
 			popup.classList.remove('popup_background_request__active');
 			popup.classList.remove('popup_background_callback__active');
@@ -50,6 +63,7 @@ $(document).ready(function(){
 		let getAttributPopup = item.getAttribute('data-callback-popup');
 		item.addEventListener('click', (e) => {
 			let popup = document.getElementById(getAttributPopup);
+			if(headerActive) {headerActive.classList.remove('_active')}
 			popup.classList.add('popup_background_callback__active');
 			html.classList.add('overflove-hidden');
 		} );
@@ -102,9 +116,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		nextEl: '.main .swiper-button-next',
 		clickable: true,
 	  },
-	  autoplay: {
-		delay: 4000,
-		disableOnInteraction: false,
-	  },
+	  // autoplay: {
+		// delay: 4000,
+		// disableOnInteraction: false,
+	  // },
 	});
   });

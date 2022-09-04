@@ -3,10 +3,13 @@
     <html lang="ru" class="page">
 
         @include('partials/head.html')
-        
+
         <body class="page__body">
             @include('partials/sprite.html')
-            @include('partials/header.html')
+            @include('partials/header.html', {
+            "contacts": './#contacts',
+            "about": './#about_company'
+            })
             <section class="popup">
                 <!-- <button class="cart__close"> -->
                 <div class="popup__request">
@@ -111,6 +114,9 @@
                 </div>
               </div>
             </section>
-            @include('partials/footer.html')
+            @include('partials/footer.html', {
+            "contacts": './#contacts',
+            "about": './#about_company'
+            })
         </body>
         </html>

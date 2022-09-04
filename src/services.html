@@ -5,12 +5,15 @@
 
 <body class="page__body">
     @include('partials/sprite.html')
-    @include('partials/header.html')
+    @include('partials/header.html', {
+    "contacts": './#contacts',
+    "about": './#about_company'
+    })
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item breadcrumbs__link" href="/">Главная</a>
       <span class="breadcrumbs__item" >Услуги</span>
     </section>
-    
+
     <main class="services container">
       <h1 class="services__title title_1">Услуги</h1>
       <ul class="services__list">
@@ -29,7 +32,10 @@
       </ul>
     </main>
 
-    @include('partials/footer.html')
+    @include('partials/footer.html', {
+    "contacts": './#contacts',
+    "about": './#about_company'
+    })
 </body>
 
 </html>

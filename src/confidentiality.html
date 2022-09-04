@@ -5,12 +5,15 @@
 
 <body class="page__body">
     @include('partials/sprite.html')
-    @include('partials/header.html')
+    @include('partials/header.html', {
+    "contacts": './#contacts',
+    "about": './#about_company'
+    })
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item breadcrumbs__link" href="/">Главная</a>
       <span class="breadcrumbs__item">Политика в отношении обработки персональных данных</span>
     </section>
-    
+
     <section class="confidentiality container">
       <h1 class="confidentiality__title title_1">Политика в отношении обработки персональных данных</h1>
       <div class="confidentiality__text">
@@ -147,7 +150,10 @@
       </div>
     </section>
 
-    @include('partials/footer.html')
+    @include('partials/footer.html', {
+    "contacts": './#contacts',
+    "about": './#about_company'
+    })
 </body>
 
 </html>

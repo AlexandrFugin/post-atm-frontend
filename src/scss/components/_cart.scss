@@ -108,13 +108,11 @@
 			border: 0;
 		}
 		&-small{
+			position: absolute;
+			top: 20rem;
+			right: 0;
 			width: 40rem;
 			height: 40rem;
-      @media screen and (max-width: 767px) {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
 		}
 		&:hover{
 			background-color: #ff4949;

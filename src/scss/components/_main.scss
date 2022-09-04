@@ -358,6 +358,7 @@
 		gap: 20rem;
 	}
 	&__cart{
+		position: relative;
 		max-width: 728rem;
 		margin: auto;
 		display: flex;
@@ -370,9 +371,8 @@
 		border: 1px solid #EEF5FC;
 		box-shadow: 0px 10px 10px rgb(98 107 115 / 3%);
 		@media screen and (max-width: 767px) {
-      width: 330px;
+			width: 330px;
 			flex-direction: column;
-      position: relative;
 		}
 	}
 }

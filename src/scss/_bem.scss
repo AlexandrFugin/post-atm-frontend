@@ -65,12 +65,12 @@
 	color: $white;
 	padding: 50rem;
 	@media screen and (max-width: 767px) {
-		padding: 30rem 10rem;
-		font-size: 12rem;
-		line-height: 16rem;
+		padding: 20rem 10rem;
+		font-size: 13rem;
+		line-height: 160%;
 	}
 	@media screen and (max-width: 360px) {
-		font-size: 12rem;
+		font-size: 13rem;
 		line-height: 16rem;
 	}
 	&:hover{

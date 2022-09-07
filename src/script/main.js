@@ -1,12 +1,16 @@
-let a = document.querySelector('.shop__filters-item-checklist')
-if(a) {
-  new Choices(a, {
-    // searchEnabled: false,
-    // itemSelectText: '',
-    // classNames: {
-    //   containerInner: 'shop__filters-item-checklist'
-    // }
-  })
+let selectsShop = document.querySelectorAll('.shop__filters-item-checklist')
+
+if(selectsShop) { 
+	selectsShop.forEach(item => {
+		new Choices(item, {
+			searchEnabled: false,
+			itemSelectText: '',
+			// classNames: {
+			//   containerInner: 'shop__filters-item-checklist'
+			// }
+		  })
+	})
+
 }
 
 

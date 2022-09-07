@@ -103,6 +103,11 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@media screen and (max-width: 767px) {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 20rem;
+			}
 		}
 		&-title{
 			font-family: $raleway;
@@ -139,6 +144,8 @@
 	&__filters {
 		display: flex;
 		margin-top: 20rem;
+		margin-bottom: 24rem;
+		gap: 20px;
 		&-button{
 			display: none;
 		}
@@ -167,7 +174,7 @@
 		}
 		@media screen and (max-width: 767px) {
 			&-button{
-				display: none;
+				align-self: flex-end;
 			}
 		}
 		&-item {
@@ -505,4 +512,42 @@
 	&__conteiner{
 		display: flex;
 	}
+}
+.choices{
+	width: 392px;
+	text-align: center;
+	color: #ACB7C1;
+	border: none;
+	margin-bottom: 0px;
+	&[data-type*=select-one]{
+		&.is-open{
+			&::after{
+				border: none;
+				transform: rotate(180deg);
+			}
+		}
+		&::after{
+			height: 15px;
+			width: 15px;
+			border: none;
+			margin-top: 0px !important;
+			top: 42%;
+			right: 51.5px;
+			background: url(../../img/svg/arrow_1.svg) no-repeat center;
+		}
+	}
+	&__inner{
+		padding: 30px 29px 30px 29px;
+		border: none;
+		padding-bottom: 20px !important;
+		background-color: #FFFFFF;
+		&:hover{
+			color: #167FE1;
+			background: #EEF5FC;
+		}
+	}
+
+}
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 0px;
 }

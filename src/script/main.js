@@ -35,8 +35,9 @@ $(document).ready(function(){
 	const btnPopupClose = document.querySelectorAll('[data-close-popup]');
 	const btnPopupCallback = document.querySelectorAll('[data-callback-popup]');
 	const btnOpenPopupRequest = document.querySelectorAll('[data-open-request]');
-	const btnShopBuy = document.querySelectorAll('.shop__product');
+	const btnShopBuy = document.querySelectorAll('.shop__product-image');
 	const btnOpenPopupCart = document.querySelectorAll('[data-open-cart]');
+	const btnOpenPopupCart2 = document.querySelectorAll('.shop__cart');
 	const html = document.querySelector('html');
   const headerActive = document.querySelector('.header__navigation-list');
 
@@ -75,7 +76,7 @@ $(document).ready(function(){
 
 	btnOpenPopupRequest.forEach(item => {
 		let getAttributPopup = item.getAttribute('data-open-request');
-		const popupBackground = document.querySelector('.popup_background');
+		const popupBackground = document.querySelector('.popup_backgbtnShopBuyshopround');
 		const popupBackgroundCallback = document.querySelector('.popup_background_callback');
 		item.addEventListener('click', (e) => {
 			let popup = document.getElementById(getAttributPopup);
@@ -91,7 +92,6 @@ $(document).ready(function(){
 			let popup = document.querySelector('.popup_background');
 			popup.classList.add('popup_background__active');
 			html.classList.add('overflove-hidden');
-			console.log('scsdvdxvx');
 		} );
 	});
 
@@ -101,6 +101,14 @@ $(document).ready(function(){
 		item.addEventListener('click', (e) => {
 			let popup = document.getElementById(getAttributPopup);
 			if (popupBackground) { popupBackground.classList.remove('popup_background__active');}
+			popup.classList.add('popupContBasket__active');
+			html.classList.add('overflove-hidden');
+		} );
+	});
+
+	btnOpenPopupCart2.forEach(item => {
+		item.addEventListener('click', (e) => {
+			let popup = document.querySelector('.popupContBasket');
 			popup.classList.add('popupContBasket__active');
 			html.classList.add('overflove-hidden');
 		} );

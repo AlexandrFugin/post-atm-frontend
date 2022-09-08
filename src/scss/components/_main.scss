@@ -94,7 +94,9 @@
 	&__button{
 		width: 558rem;
 		margin-top: 30rem;
-
+		&:hover{
+			background: #288BFF;
+		}
 		@media screen and (max-width: 767px) {
 			margin-top: 20rem;
 			width: 330rem;

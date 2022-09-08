@@ -71,11 +71,12 @@
 	}
 	@media screen and (max-width: 360px) {
 		font-size: 13rem;
-		line-height: 16rem;
+		// line-height: 16rem;
 	}
 	&:hover{
 		&::before{
 			opacity: 1;
+			
 		}
 		.button__text::after{
 			transform: translateY(-50%) translateX(8rem);
@@ -179,6 +180,9 @@
 	background: $orange;
 	color: $white;
 	padding: 50rem;
+	&:hover{
+		background: #FF702D !important;
+	}
 	@media screen and (max-width: 767px) {
 		padding: 30rem 10rem;
     font-size: 12rem;

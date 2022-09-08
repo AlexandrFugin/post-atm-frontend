@@ -533,21 +533,51 @@
 			margin-top: 0px !important;
 			top: 42%;
 			right: 51.5px;
-			background: url(../../img/svg/arrow_1.svg) no-repeat center;
+			background: url(../img/svg/arrow_1.svg) no-repeat center;
 		}
 	}
 	&__inner{
-		padding: 30px 29px 30px 29px;
+		padding: 25px 29px 25px 29px !important;
 		border: none;
-		padding-bottom: 20px !important;
 		background-color: #FFFFFF;
 		&:hover{
 			color: #167FE1;
 			background: #EEF5FC;
 		}
 	}
-
+	&__item--selectable{
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: 0.03em;
+	}
 }
+
 .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
     padding-right: 0px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0.03em;
+	color: #ACB7C1;
+	&:hover{
+		color: black;
+		background: #EEF5FC;
+		.choices__inner{
+			background: #da0c84 !important;
+		}
+	}
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded]{
+	border: none !important;
+	&:hover{
+		.choices__inner{
+			background: #da0c84 !important;
+		}
+	}
 }

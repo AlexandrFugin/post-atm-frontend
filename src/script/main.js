@@ -114,6 +114,29 @@ $(document).ready(function(){
 		} );
 	});
 
+	// const btnFilter = document.querySelectorAll('.shop__filters-button');
+	// console.log(btnFilter);
+	// const tabFilter = document.querySelectorAll('.shop__filters');
+	// console.log(tabFilter);
+	// btnFilter.forEach(item => {
+	// item.addEventListener('click', (e) => {
+	// 	document.querySelector('.shop__filters').classList.toggle('shop__filters-active')
+	// });
+	// });
+
+	const btnFilter = document.querySelectorAll('[shop__filters-button]');
+	console.log(btnFilter);
+	// const tabFilter = document.querySelectorAll('.shop__filters');
+	// console.log(tabFilter);
+	btnFilter.forEach(item => {
+		let getAttributPopup = item.getAttribute('shop__filters-button');
+		item.addEventListener('click', (e) => {
+			let popup = document.getElementById(getAttributPopup);
+			popup.classList.toggle('shop__filters-active');
+		// document.querySelector('.shop__filters').classList.toggle('shop__filters-active')
+	});
+	});
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {

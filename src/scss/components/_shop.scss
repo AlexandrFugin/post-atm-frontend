@@ -149,6 +149,11 @@
 		&-button{
 			display: none;
 		}
+		&-active{
+			display: flex !important;
+			flex-direction: column;
+			gap: 8px;
+		}
 		@media screen and (max-width: 991px) {
 			display: none;
 			&-button{
@@ -519,6 +524,9 @@
 	color: #ACB7C1;
 	border: none;
 	margin-bottom: 0px;
+	@media screen and (max-width: 767px) {
+		width: auto;
+	}
 	&[data-type*=select-one]{
 		&.is-open{
 			&::after{
@@ -534,12 +542,18 @@
 			top: 42%;
 			right: 51.5px;
 			background: url(../img/svg/arrow_1.svg) no-repeat center;
+			@media screen and (max-width: 767px) {
+				content: none;
+			}
 		}
 	}
 	&__inner{
 		padding: 25px 29px 25px 29px !important;
 		border: none;
 		background-color: #FFFFFF;
+		@media screen and (max-width: 767px) {
+			padding: 10px 29px 10px 29px !important;
+		}
 		&:hover{
 			color: #167FE1;
 			background: #EEF5FC;
@@ -564,6 +578,10 @@
 	line-height: 22px;
 	letter-spacing: 0.03em;
 	color: #ACB7C1;
+	@media screen and (max-width: 767px) {
+		font-size: 14px;
+		line-height: 19px;
+	}
 	&:hover{
 		color: black;
 		background: #EEF5FC;
@@ -575,9 +593,21 @@
 
 .choices__list--dropdown, .choices__list[aria-expanded]{
 	border: none !important;
+	@media screen and (max-width: 767px) {
+		bottom: -200px;
+		transition: all 1s;
+		position: fixed;
+		left: 0;
+		right: 0;
+	}
 	&:hover{
 		.choices__inner{
 			background: #da0c84 !important;
 		}
+	}
+}
+.is-active.choices__list--dropdown, .is-active.choices__list[aria-expanded]{
+	@media screen and (max-width: 767px) {
+	bottom: 0;
 	}
 }

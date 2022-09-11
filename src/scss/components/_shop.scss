@@ -260,6 +260,10 @@
 			.shop__product-title{
 				white-space: normal;
 				overflow: visible;
+				@media screen and (max-width: 767px) {
+					white-space: nowrap;
+					overflow: hidden;
+				}
 			}
 			.shop__cart{
 				border-color: $main;
@@ -269,7 +273,7 @@
 				height: 464px;
 			}
 			@media screen and (max-width: 767px) {
-				height: 313px;
+				height: 290px;
 			}
 		}
 		&-image {

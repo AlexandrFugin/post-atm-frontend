@@ -59,6 +59,9 @@
 			font-size: 24rem;
 			letter-spacing: 0;
 		}
+		@media screen and (max-width: 360px) {
+			font-size: 22rem;
+		}
 	}
 	&__description{
 		position: relative;
@@ -206,6 +209,9 @@
 		margin: auto;
 		margin-top: 10%;
 		background-color: #FFFFFF;
+		@media screen and (max-width: 360px) {
+			max-width: 330rem;
+		}
 	}
 	&__pic{
 		align-self: end;
@@ -240,6 +246,7 @@
 			font-size: 22px;
 			line-height: 130%;
 			margin: 0 auto;
+			margin-top: 10rem;
 		}
 	}
 	&__text{
@@ -250,6 +257,11 @@
 		line-height: 150%;
 		text-align: center;
 		color: #4A5C6D;
+		@media screen and (max-width: 767px) {
+			max-width: 270rem !important;
+			font-size: 15px;
+			padding-bottom: 50rem !important;
+		}
 		&-request{
 			max-width: 350rem;
 			margin-top: 10rem;
@@ -265,6 +277,10 @@
 			color: #ACB7C1;
 			width: 350rem;
 			padding-bottom: 80rem;
+			@media screen and (max-width: 360px) {
+				width: auto;
+				padding-bottom: 50rem;
+			}
 			&-conf{
 				color: #FF5707;
 			}
@@ -285,6 +301,9 @@
 		margin: auto;
 		margin-top: 15%;
 		background: #FFFFFF;
+		@media screen and (max-width: 360px) {
+			width: 330rem;
+		}
 	}
 	&__buttons{
 		display: flex;
@@ -293,16 +312,29 @@
 		gap: 20rem;
 		margin-top: 30rem;
 		padding-bottom: 60rem;
+		@media screen and (max-width: 360px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
+
 	&__addbasketbtn{
 		width: 294rem;
 		height: 80rem;
 		padding: 0;
+		@media screen and (max-width: 360px) {
+			width: 270rem;
+			order: 1;
+		}
 		&-white{
 			background-image: none;
 			background-color: #FFFFFF;
 			border: 1px solid #167FE1;
 			color: #167FE1;
+			@media screen and (max-width: 360px) {
+				width: 270rem;
+				order: 2;
+			}
 			&:hover{
 				background: linear-gradient(94.6deg, #1673E1 0%, #0F7CFC 100%);;
 				color: #FFFFFF;
@@ -317,6 +349,9 @@
 		margin: auto;
 		margin-top: 8%;
 		background-color: #FFFFFF;
+		@media screen and (max-width: 360px) {
+			width: 330px;
+		}
 	}
 	&__contTel{
 		width: 350rem;
@@ -326,6 +361,10 @@
 		justify-content: center;
 		margin-bottom: 20rem;
 		border: 1px solid #ACB7C1;
+		@media screen and (max-width: 360px) {
+			width: 270px;
+			height: 70rem;
+		}
 		&-pic{
 			height: 25rem;
 			width: 25rem;
@@ -348,6 +387,10 @@
 		height: 80rem;
 		padding: 0;
 		margin-bottom: 10rem;
+		@media screen and (max-width: 360px) {
+			width: 270px;
+			height: 70rem;
+		}
 	}
 	&__cookie{
 		width: 499rem;
